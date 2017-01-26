@@ -13,12 +13,13 @@ gulp.task('browser-sync', function(){
 	});
 
 gulp.task('sass', function(){
-	return gulp.src('./source/**/*.scss')
+	return gulp.src('./source/buttons.scss')
 	.pipe(sass().on('error', sass.logError))
-	.pipe(gulp.dest('./'));
+	.pipe(gulp.dest('./buttons'));
 });		
 
-gulp.task('watch', ['browser-sync', 'sass'], function () {
+gulp.task('watch', ['sass', 'browser-sync'], function () {
+	gulp.watch('./source/*.scss', ['sass']);
     gulp.watch("./*.css").on('change', reload);
     gulp.watch("./*.html").on('change', reload);
 });
