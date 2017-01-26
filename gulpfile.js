@@ -1,6 +1,7 @@
 var gulp = require('gulp'),
 	browserSync = require('browser-sync'),
 	sass = require('gulp-sass'),
+	autoprefixer = require('gulp-autoprefixer'),
 	reload = browserSync.reload;
 
 
@@ -15,6 +16,7 @@ gulp.task('browser-sync', function(){
 gulp.task('sass', function(){
 	return gulp.src('./source/buttons.scss')
 	.pipe(sass().on('error', sass.logError))
+	.pipe(autoprefixer())
 	.pipe(gulp.dest('./buttons'));
 });		
 

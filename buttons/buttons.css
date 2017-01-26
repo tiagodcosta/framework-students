@@ -1,6 +1,8 @@
 /* Default Button */
 .btn {
-  appearance: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
   outline: none;
   display: inline-block;
   font-size: 1rem;
@@ -8,6 +10,7 @@
   border: 0.125em solid #d5d5d5;
   border-radius: 5px;
   cursor: pointer;
+  -webkit-transition: all .2s linear;
   transition: all .2s linear; }
 
 .btn:enabled:hover {
@@ -19,7 +22,9 @@
 
 /* Nav Button */
 .btn-nav {
-  appearance: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
   display: inline-block;
   width: 4.3em;
   font-size: 0.8rem;
@@ -35,7 +40,9 @@
 /* Submit Button */
 .btn-submit {
   font-size: 1rem;
-  appearance: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
   white-space: nowrap;
   display: inline-block;
   font-size: 0.8rem;
@@ -60,13 +67,16 @@
 
 /* List Button */
 .btn-list {
-  appearance: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
   display: inline-block;
   font-size: 0.8rem;
   padding: 8px 15px;
   border: 1px solid #d5d5d5;
   border-radius: 5px;
   cursor: pointer;
+  -webkit-transition: all .2s linear;
   transition: all .2s linear; }
 
 .btn-list:enabled:hover {
