@@ -1,0 +1,30 @@
+{
+  "name": "library-styles-css-inkdlab",
+  "version": "1.0.0",
+  "description": "Shared styles used in the lab",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/inkdlab/library-styles.git"
+  },
+  "keywords": [
+    "css",
+    "stylesheet",
+    "library",
+    "html"
+  ],
+  "author": "InkDlab",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/inkdlab/library-styles/issues"
+  },
+  "homepage": "https://github.com/inkdlab/library-styles#readme",
+  "devDependencies": {
+    "browser-sync": "^2.18.6",
+    "gulp": "^3.9.1",
+    "gulp-sass": "^3.1.0"
+  }
+}
