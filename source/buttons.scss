@@ -1,12 +1,20 @@
 /* Default Button */
 
+//Colors scheme
+$color-default: #d5d5d5;
+$color-black: #000;
+$color-blue: #3498db;
+$color-green: #2ecc71;
+$color-red: #e74c3c;
+$color-white: #fff; 
+
 .btn {
 	appearance: none;
  	outline: none;
  	display: inline-block;
  	font-size: 1rem;
  	padding: 0.5em 1em;
- 	border: 0.125em solid #d5d5d5;
+ 	border: 0.125em solid $color-default;
 	border-radius: 5px;
  	cursor: pointer;
  	transition: all .2s linear;
@@ -29,7 +37,7 @@
  	width: 4.3em;
  	font-size: 0.8rem;
  	padding: 6px 12px;
- 	border: 1px solid #d5d5d5;
+ 	border: 1px solid $color-default;
  	border-radius: 5px;
  	cursor: pointer;
 }
@@ -48,7 +56,7 @@
  	display: inline-block;
  	font-size: 0.8rem;
  	padding: 0 1.5em;
- 	border: 1px solid #d5d5d5;
+ 	border: 1px solid $color-default;
  	border-radius: 5px;
  	cursor: pointer;
 }
@@ -76,15 +84,15 @@
  	display: inline-block;
  	font-size: 0.8rem;
  	padding: 8px 15px;
- 	border: 1px solid #d5d5d5;
+ 	border: 1px solid $color-default;
 	border-radius: 5px;
  	cursor: pointer;
  	transition: all .2s linear;
 }
 
 .btn-list:enabled:hover {
- 	background-color: #fff;
- 	color: #000;
+ 	background-color: $color-white;
+ 	color: $color-black;
 }
  
 
@@ -112,56 +120,56 @@
  
 /* Green */
 .btn--green, .btn-nav--green, .btn-submit--green {
- 	background-color: #2ecc71;
- 	color: #fff;
+ 	background-color: $color-green;
+ 	color: $color-white;
 }
 
 .btn--green:enabled:hover, .btn-nav--green:enabled:hover, .btn-submit--green:enabled:hover {
- 	color: #2ecc71;
- 	border-color: #2ecc71;
+ 	color: $color-green;
+ 	border-color: $color-green;
 }
  
 
 /* Blue */
 .btn--blue, .btn-nav--blue, .btn-submit--blue {
- 	background-color: #3498db;
- 	color: #fff;
+ 	background-color: $color-blue;
+ 	color: $color-white;
 }
 
 .btn--blue:enabled:hover, .btn-nav--blue:enabled:hover, .btn-submit--blue:enabled:hover {
- 	color: #3498db;
- 	border-color: #3498db;
+ 	color: $color-blue;
+ 	border-color: $color-blue;
  }
  
  
  /* red */
  .btn--red, .btn-nav--red, .btn-submit--red, .btn-list--red  {
- 	background-color: #e74c3c;
- 	color: #fff;
+ 	background-color: $color-red;
+ 	color: $color-white;
  }
 
  .btn--red:enabled:hover, .btn-nav--red:enabled:hover, .btn-submit--red:enabled:hover, .btn-list--red:enabled:hover {
- 	color:#e74c3c;
- 	border-color: #e74c3c;
+ 	color:$color-red;
+ 	border-color: $color-red;
  }
  
 
  /* Black */
 .btn--black, .btn-nav--black, .btn-submit--black  {
-	background-color: #000;
-	color: #fff;
+	background-color: $color-black;
+	color: $color-white;
 }
 
 .btn--black:enabled:hover, .btn-nav--black:enabled:hover, .btn-submit--black:enabled:hover {
-	color: #000;
-	border-color: #000;
+	color: $color-black;
+	border-color: $color-black;
 }
 
 
 /* Orange */
 .btn--orange, .btn-nav--orange, .btn-submit--orange {
 	background-color: #e67e22;
-	color: #fff;
+	color: $color-white;
 }
 
 .btn--orange:enabled:hover, .btn-nav--orange:enabled:hover, .btn-submit--orange:enabled:hover {
@@ -173,7 +181,7 @@
 /* Brown */
 .btn--brown, .btn-nav--brown, .btn-submit--brown {
 	background-color: #795548;
-	color: #fff;
+	color: $color-white;
 }
 
 .btn--brown:enabled:hover, .btn-nav--brown:enabled:hover, .btn-submit--brown:enabled:hover {
