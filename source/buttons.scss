@@ -4,113 +4,58 @@
 $color-default: #d5d5d5;
 $color-black: #000;
 $color-blue: #3498db;
+$color-brown: #795548;
 $color-green: #2ecc71;
+$color-orange: #e67e22;
 $color-red: #e74c3c;
 $color-white: #fff; 
 
 .btn {
 	appearance: none;
- 	outline: none;
+	outline: none;
  	display: inline-block;
  	font-size: 1rem;
  	padding: 0.5em 1em;
- 	border: 0.125em solid $color-default;
-	border-radius: 5px;
+ 	border: 0.06em solid $color-default;
  	cursor: pointer;
  	transition: all .2s linear;
-}
- 
-.btn:enabled:hover {
- 	background-color: #fff;
- 	color: #000;
+	
+
+	&:enabled:hover {
+ 		background-color: $color-white;
+ 		color: $color-black;
+ 		border: 0.06em solid $color-black;
+ 	}
+
+    &[hidden] {
+    	display: none;
+	}
+
 }
 
-.btn[hidden] {
-    display: none;
-}
+/* Default Button disabled */
  
-
-/* Nav Button */
-.btn-nav {
- 	appearance: none;
- 	display: inline-block;
- 	width: 4.3em;
- 	font-size: 0.8rem;
- 	padding: 6px 12px;
- 	border: 1px solid $color-default;
- 	border-radius: 5px;
- 	cursor: pointer;
-}
- 
-.btn-nav:enabled:hover {
- 	background-color: #fff;
- 	color: #000;
+button[disabled=disabled], button:disabled, btn--disabled {
+ 	cursor: not-allowed;
+ 	box-shadow: none;
+ 	opacity: .65;
 }
 
  
-/* Submit Button */
-.btn-submit {
-    font-size: 1rem;
- 	appearance: none;
- 	white-space: nowrap;
- 	display: inline-block;
- 	font-size: 0.8rem;
- 	padding: 0 1.5em;
- 	border: 1px solid $color-default;
- 	border-radius: 5px;
- 	cursor: pointer;
-}
-
-.btn-submit:before {
- 	content: "\2714";
- 	float: left;
-   	width: 1em;
-   	text-align: center;
-   	font-size: 1em;
-   	margin: 0 0.02em 0 -0.8em;
-   	padding: 0 .2em;
-   	pointer-events: none;
-}
- 
-.btn-submit:enabled:hover {
- 	background-color: #fff;
- 	color: #000;
-}
-
-
- /* List Button */
-.btn-list {
-	appearance: none;
- 	display: inline-block;
- 	font-size: 0.8rem;
- 	padding: 8px 15px;
- 	border: 1px solid $color-default;
-	border-radius: 5px;
- 	cursor: pointer;
- 	transition: all .2s linear;
-}
-
-.btn-list:enabled:hover {
- 	background-color: $color-white;
- 	color: $color-black;
-}
- 
-
-
 /***** SIZES *****/
  
-.btn--small, .btn-nav--small, .btn-submit--small {
+.btn--small {
     font-size: 0.8rem;
  	padding: 4px 7px;
 }
  
-.btn--medium, .btn-nav--medium, .btn-submit--medium {
- 	font-size: 0.8rem;
+.btn--medium {
+ 	font-size: 1.1rem;
  	padding: 6px 12px;
 }
  
-.btn--large, .btn-nav--large, .btn-submit--large {
- 	font-size: 1.1rem;
+.btn--large {
+ 	font-size: 1.4rem;
  	padding: 10px 17px;
 }
 
@@ -119,81 +64,109 @@ $color-white: #fff;
 /***** COLORS *****/
  
 /* Green */
-.btn--green, .btn-nav--green, .btn-submit--green {
+.btn--green {
  	background-color: $color-green;
  	color: $color-white;
 }
 
-.btn--green:enabled:hover, .btn-nav--green:enabled:hover, .btn-submit--green:enabled:hover {
+.btn--green:enabled:hover {
  	color: $color-green;
  	border-color: $color-green;
 }
  
 
 /* Blue */
-.btn--blue, .btn-nav--blue, .btn-submit--blue {
+.btn--blue {
  	background-color: $color-blue;
  	color: $color-white;
 }
 
-.btn--blue:enabled:hover, .btn-nav--blue:enabled:hover, .btn-submit--blue:enabled:hover {
+.btn--blue:enabled:hover {
  	color: $color-blue;
  	border-color: $color-blue;
  }
  
  
  /* red */
- .btn--red, .btn-nav--red, .btn-submit--red, .btn-list--red  {
+ .btn--red {
  	background-color: $color-red;
  	color: $color-white;
  }
 
- .btn--red:enabled:hover, .btn-nav--red:enabled:hover, .btn-submit--red:enabled:hover, .btn-list--red:enabled:hover {
+ .btn--red:enabled:hover {
  	color:$color-red;
  	border-color: $color-red;
  }
  
 
  /* Black */
-.btn--black, .btn-nav--black, .btn-submit--black  {
+.btn--black {
 	background-color: $color-black;
 	color: $color-white;
 }
 
-.btn--black:enabled:hover, .btn-nav--black:enabled:hover, .btn-submit--black:enabled:hover {
+.btn--black:enabled:hover {
 	color: $color-black;
 	border-color: $color-black;
 }
 
 
 /* Orange */
-.btn--orange, .btn-nav--orange, .btn-submit--orange {
-	background-color: #e67e22;
+.btn--orange {
+	background-color: $color-orange;
 	color: $color-white;
 }
 
-.btn--orange:enabled:hover, .btn-nav--orange:enabled:hover, .btn-submit--orange:enabled:hover {
-	color: #e67e22;
-	border-color: #e67e22;
+.btn--orange:enabled:hover {
+	color: $color-orange;
+	border-color: $color-orange;
 }
 
 
 /* Brown */
-.btn--brown, .btn-nav--brown, .btn-submit--brown {
-	background-color: #795548;
+.btn--brown {
+	background-color: $color-brown;
 	color: $color-white;
 }
 
-.btn--brown:enabled:hover, .btn-nav--brown:enabled:hover, .btn-submit--brown:enabled:hover {
-	color: #795548;
-	border-color: #795548;
+.btn--brown:enabled:hover {
+	color: $color-brown;
+	border-color: $color-brown;
 }
  
 
-/***** DISABLED *****/
  
-button[disabled=disabled], button:disabled {
- 	cursor: not-allowed;
- 	box-shadow: none;
- 	opacity: .65;
+/* Submit Button */
+.btn-submit {
+ 	white-space: nowrap;
+ 	padding: 0.5em 1em 0.5em 1.5em;
+	
+	&:before {
+	 	content: "\2714";
+	 	float: left;
+	   	width: 1em;
+	   	text-align: center;
+	   	font-size: 1em;
+	   	margin: 0 0.02em 0 -0.8em;
+	   	padding: 0 .2em;
+	   	pointer-events: none;
+	}
+}	
+
+/* Round Button */
+.btn-round {
+	border-radius: 1em;
 }
+
+/* Radius Button */
+.btn-radius {
+	border-radius: 0.31em;
+}
+
+/* Circle Button */
+.btn-circle {
+	width: 6em;
+	height: 6em;
+	border-radius: 50%;
+}
+

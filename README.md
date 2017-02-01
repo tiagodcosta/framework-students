@@ -1,3 +1,3 @@
 ## Library of styles
 
-Hello World!
+[An inital draft](https://inkdlab.github.io/library-styles/)
