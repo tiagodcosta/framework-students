@@ -7,6 +7,7 @@ $color-blue: #3498db;
 $color-brown: #795548;
 $color-green: #2ecc71;
 $color-orange: #e67e22;
+$color-purple: #8e44ad;
 $color-red: #e74c3c;
 $color-white: #fff; 
 
@@ -46,17 +47,21 @@ button[disabled=disabled], button:disabled, btn--disabled {
  
 .btn--small {
     font-size: 0.8rem;
- 	padding: 4px 7px;
+ 	padding: 0.250em 0.438em;
 }
  
 .btn--medium {
  	font-size: 1.1rem;
- 	padding: 6px 12px;
+ 	padding: 0.375em 0.750em;
 }
  
 .btn--large {
  	font-size: 1.4rem;
- 	padding: 10px 17px;
+ 	padding: 0.615em 1.063em;
+}
+.btn--jumbo {
+	font-size: 1.7rem;
+	padding: 0.938em 1.37em;
 }
 
 
@@ -67,11 +72,11 @@ button[disabled=disabled], button:disabled, btn--disabled {
 .btn--green {
  	background-color: $color-green;
  	color: $color-white;
-}
 
-.btn--green:enabled:hover {
- 	color: $color-green;
- 	border-color: $color-green;
+	&:enabled:hover {
+ 		color: $color-green;
+ 		border-color: $color-green;
+ 	}	
 }
  
 
@@ -132,6 +137,17 @@ button[disabled=disabled], button:disabled, btn--disabled {
 .btn--brown:enabled:hover {
 	color: $color-brown;
 	border-color: $color-brown;
+}
+
+/* Brown */
+.btn--purple {
+	background-color: $color-purple;
+	color: $color-white;
+}
+
+.btn--purple:enabled:hover {
+	color: $color-purple;
+	border-color: $color-purple;
 }
  
 

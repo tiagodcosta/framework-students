@@ -27,25 +27,28 @@ button[disabled=disabled], button:disabled, btn--disabled {
 /***** SIZES *****/
 .btn--small {
   font-size: 0.8rem;
-  padding: 4px 7px; }
+  padding: 0.250em 0.438em; }
 
 .btn--medium {
   font-size: 1.1rem;
-  padding: 6px 12px; }
+  padding: 0.375em 0.750em; }
 
 .btn--large {
   font-size: 1.4rem;
-  padding: 10px 17px; }
+  padding: 0.615em 1.063em; }
+
+.btn--jumbo {
+  font-size: 1.7rem;
+  padding: 0.938em 1.37em; }
 
 /***** COLORS *****/
 /* Green */
 .btn--green {
   background-color: #2ecc71;
   color: #fff; }
-
-.btn--green:enabled:hover {
-  color: #2ecc71;
-  border-color: #2ecc71; }
+  .btn--green:enabled:hover {
+    color: #2ecc71;
+    border-color: #2ecc71; }
 
 /* Blue */
 .btn--blue {
@@ -91,6 +94,15 @@ button[disabled=disabled], button:disabled, btn--disabled {
 .btn--brown:enabled:hover {
   color: #795548;
   border-color: #795548; }
+
+/* Brown */
+.btn--purple {
+  background-color: #8e44ad;
+  color: #fff; }
+
+.btn--purple:enabled:hover {
+  color: #8e44ad;
+  border-color: #8e44ad; }
 
 /* Submit Button */
 .btn-submit {
