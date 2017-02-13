@@ -2,32 +2,35 @@
 .img {
 	border: 0 none;
 	outline: none;
-}
-// shapes
-.img-radius {
-	border-radius: 0.31em;
-}
-.img-round {
-	border-radius: 1.5em;
-}
-.img-circle {
-	width: 15em;
-	height: 15em;
-	border-radius: 50%;
-}
-// borders
-.img-normal-border {
-	border: 0.31em solid #000;
-}
-.img-double-border {
-	border: 0.31em double #000;
-}
-// filter
-.img--sepia {
-	-webkit-filter: sepia(1);
-  	filter: sepia(1);
-}
-.img--grayscale {
-	-webkit-filter: grayscale(1);
-	filter: grayscale(1);
+
+	// shapes
+	&-radius {
+		border-radius: 0.31em;
+	}
+	&-round {
+		border-radius: 1.5em;
+	}
+	&-circle {
+		width: 15em;
+		height: 15em;
+		border-radius: 50%;
+	}
+
+	// borders
+	&-normal-border {
+		border: 0.31em solid #000;
+	}
+	&-double-border {
+		border: 0.31em double #000;
+	}
+
+	// filter
+	&--sepia {
+		-webkit-filter: sepia(1);
+  		filter: sepia(1);
+	}
+	&--grayscale {
+		-webkit-filter: grayscale(1);
+		filter: grayscale(1);
+	}
 }
