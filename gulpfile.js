@@ -14,10 +14,10 @@ gulp.task('browser-sync', function(){
 	});
 
 gulp.task('sass', function(){
-	return gulp.src('./source/buttons.scss')
-	.pipe(sass().on('error', sass.logError))
+	return gulp.src('./source/media.scss')
+	.pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
 	.pipe(autoprefixer())
-	.pipe(gulp.dest('./buttons'));
+	.pipe(gulp.dest('./media'));
 });		
 
 gulp.task('watch', ['sass', 'browser-sync'], function () {
