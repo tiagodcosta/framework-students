@@ -1,0 +1,26 @@
+.node {
+	display: block;
+	width: 60%;
+	height: 30em;
+	background-color: #fff;
+	color: #000;
+	padding: 1em;
+	border: 0.06em solid #d5d5d5;
+
+	//position 
+	&--center {
+		margin: 0 auto;
+	}
+	//colors
+	&--blue {
+		background-color: #3498db;
+		border: 0.06em solid #3498db;
+	}
+	&--grey {
+		background-color: #d5d5d5;
+	}
+	&--pink {
+		background-color: #ffc0cb;
+		border: 0.06em solid #ffc0cb;
+	}
+}
