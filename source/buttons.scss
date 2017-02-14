@@ -90,6 +90,11 @@ button[disabled=disabled], button:disabled, btn--disabled {
  	background-color: $color-blue;
  	color: $color-white;
 }
+.btn--blue:hover {
+ 	color: $color-blue;
+ 	border-color: $color-blue;
+ 	background-color: transparent;
+ }
 
 .btn--blue:enabled:hover {
  	color: $color-blue;
@@ -101,6 +106,11 @@ button[disabled=disabled], button:disabled, btn--disabled {
  .btn--red {
  	background-color: $color-red;
  	color: $color-white;
+ }
+ .btn--red:hover {
+ 	color:$color-red;
+ 	border-color: $color-red;
+ 	background-color: transparent;
  }
 
  .btn--red:enabled:hover {
@@ -114,7 +124,11 @@ button[disabled=disabled], button:disabled, btn--disabled {
 	background-color: $color-black;
 	color: $color-white;
 }
-
+.btn--black:hover {
+	color: $color-black;
+	border-color: $color-black;
+	background-color: transparent;
+}
 .btn--black:enabled:hover {
 	color: $color-black;
 	border-color: $color-black;
@@ -126,7 +140,11 @@ button[disabled=disabled], button:disabled, btn--disabled {
 	background-color: $color-orange;
 	color: $color-white;
 }
-
+.btn--orange:hover {
+	color: $color-orange;
+	border-color: $color-orange;
+	background-color: transparent;
+}
 .btn--orange:enabled:hover {
 	color: $color-orange;
 	border-color: $color-orange;
@@ -138,7 +156,11 @@ button[disabled=disabled], button:disabled, btn--disabled {
 	background-color: $color-brown;
 	color: $color-white;
 }
-
+.btn--brown:hover {
+	color: $color-brown;
+	border-color: $color-brown;
+	background-color: transparent;
+}
 .btn--brown:enabled:hover {
 	color: $color-brown;
 	border-color: $color-brown;
@@ -149,7 +171,11 @@ button[disabled=disabled], button:disabled, btn--disabled {
 	background-color: $color-purple;
 	color: $color-white;
 }
-
+.btn--purple:hover {
+	color: $color-purple;
+	border-color: $color-purple;
+	background-color: transparent;
+}
 .btn--purple:enabled:hover {
 	color: $color-purple;
 	border-color: $color-purple;
