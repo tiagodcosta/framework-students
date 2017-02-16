@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Libray of styles - Students - CSS</title>
+	<link rel="stylesheet" type="text/css" href="../css/buttons.css">
+	<link rel="stylesheet" type="text/css" href="../css/media.css">
+	<link rel="stylesheet" type="text/css" href="../css/typography.css">
+	<link rel="stylesheet" type="text/css" href="../css/containers.css">
+</head>
+<style>
+	@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+	html {
+		font-size: 16px;
+		font-family: 'Open Sans', sans-serif;
+	}
+	code {
+		background-color: #bdc3c7;
+		padding: 0.31em;
+		display: block;
+		width: 18.75em;
+		margin-bottom: 0.6em;
+		text-align: center;
+	}
+	h1 {
+		color: #3498db;
+	}
+	.section-title {
+		font-size: 1em;
+		font-weight: 800;
+	}
+	nav {
+		width: 30%;
+		margin: 5em auto 5em 0;
+	}
+	ul {
+		list-style: none;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		flex-wrap: wrap;
+	}
+	li a {
+		text-decoration: none;
+		color: #3498db;
+	}
+
+</style>
+<body>
+	<nav>
+		<ul>
+			<li class="section-title">Sections:</li>
+			<li><a href="#images">Images</a></li>
+			<li><a href="#containers">Containers</a></li>
+			<li><a href="#buttons">Buttons</a></li>
+		</ul>
+	</nav>
+	<h1 id="images">Images styles</h1>
+	<h3>1. Radius image</h3>
+	<code>class="img-radius"</code>
+	<img class="img img-radius" src="https://s3.postimg.org/bxeloy2lf/sample1.jpg" alt="">
+	<h3>2. Round image</h3>
+	<code>class="img-round"</code>
+	<img class="img img-round" src="https://s3.postimg.org/bxeloy2lf/sample1.jpg" alt="">
+	<h3>3. Circle image</h3>
+	<code>class="img-circle"</code>
+	<img class="img img-circle" src="https://s3.postimg.org/bxeloy2lf/sample1.jpg" alt="">
+	<h3>4. Image normal border</h3>
+	<code>class="img-normal-border"</code>
+	<img class="img img-normal-border" src="https://s3.postimg.org/bxeloy2lf/sample1.jpg" alt="">
+	<h3>5. Image double border</h3>
+	<code>class="img-double-border"</code>
+	<img class="img img-double-border" src="https://s3.postimg.org/bxeloy2lf/sample1.jpg" alt="">
+	<h3>6. Image Sepia</h3>
+	<code>class="img--sepia"</code>
+	<img class="img img--sepia" src="https://s3.postimg.org/bxeloy2lf/sample1.jpg" alt="">
+	<h3>7. Image Black and White</h3>
+	<code>class="img--grayscale"</code>
+	<img class="img img--grayscale" src="https://s3.postimg.org/bxeloy2lf/sample1.jpg" alt="">
+	<h1>Typography styles</h1>
+	<h3>1. Body text</h3>
+	<code>class="body-text" </code>
+	<p class="body-text">This is the body text. Ideal for paragraphs</p>
+	<h3>2. Headline</h3>
+	<code>class="headline"</code>
+	<p class="headline">This is the headline style. Ideal for titles</p>
+	<h1 id="containers">Containers styles</h1>
+	<h3>1. Node</h3>
+	<code>class="node"</code>
+	<div class="node" style="height: 30em; margin: 0">This is a default node container</div>
+	<h3>1.1 Node Colors</h3>
+	<code>class="node node--blue"<br>class="node node--grey" <br>class="node node--pink"<br>class="node node--green"</code>
+	<div class="node node--blue" style="height: 30em; margin: 0">This is a blue node container</div>
+	<br>
+	<div class="node node--grey" style="height: 30em; margin: 0">This is a grey node container</div>
+	<br>
+	<div class="node node--pink" style="height: 30em; margin: 0">This is a pink node container</div>
+	<br>
+	<div class="node node--green" style="height: 30em; margin: 0">This is a green node container</div>
+	<br>
+	<div class="node node--yellow" style="height: 30em; margin: 0">This is a yellow node container</div>
+	<h1 id="buttons">Buttons style</h1>
+	<h3>1. Default Button</h3>
+	<code>class="btn"</code>
+	<button class="btn">Default</button>
+	<h3>1.2. Disable Button</h3>
+	<code>disabled="disabled" <br> class="btn btn--disabled"</code>
+	<button class="btn" disabled="disabled">Disable</button>
+	<h3>1.3. Sizes Button</h3>
+	<code>class="btn btn--small"<br>class="btn btn--medium"<br>class="btn btn--large"<br>class="btn btn--jumbo"</code>
+	<button class="btn btn--small">Small</button>
+	<button class="btn btn--medium">Medium</button>
+	<button class="btn btn--large">Large</button>
+	<button class="btn btn--jumbo">Jumbo</button>
+	<h3>1.4. Colors</h3>
+	<code>class="btn btn--red"<br>class="btn btn--green"<br>class="btn btn--blue"<br>class="btn btn--purple"</code>
+	<button class="btn btn--small btn--red">Red</button>
+	<button class="btn btn--medium btn--green">Green</button>
+	<button class="btn btn--large btn--blue">Blue</button>
+	<button class="btn btn--jumbo btn--purple">Purple</button>
+	<h3>2. Submit Button</h3>
+	<code>class="btn btn-submit"</code>
+	<button class="btn btn-submit btn--medium">Submit</button>
+	<h3>2.1 Disabled Submit Button</h3>
+	<button class="btn btn-submit btn--medium" disabled="disabled">Submit</button>
+	<h3>2.2 Colors Submit Button</h3>
+	<button class="btn btn-submit btn--small  btn--red">Submit</button>
+	<button class="btn btn-submit btn--medium  btn--green">Submit</button>
+	<button class="btn btn-submit btn--large  btn--blue">Submit</button>
+	<button class="btn btn-submit btn--jumbo  btn--purple">Submit</button>
+	<h3>3. Round Button</h3>
+	<code>class="btn btn-round"</code>
+	<button class="btn btn-round btn--medium">Round</button>
+	<h3>3.1. Disabled Round Button</h3>
+	<button class="btn btn-round btn--medium" disabled="disabled">Round</button>
+	<h3>3.2. Colors and Sizes Round Button</h3>
+	<button class="btn btn-round btn--small  btn--red">Round</button>
+	<button class="btn btn-round btn--medium  btn--green">Round</button>
+	<button class="btn btn-round btn--large  btn--blue">Round</button>
+	<button class="btn btn-round btn--jumbo  btn--purple">Round</button>
+	<h3>4. Radius Button</h3>
+	<code>class="btn btn-radius"</code>
+	<button class="btn btn-radius btn--medium">Radius</button>
+	<h3>4.1. Disabled Radius Button</h3>
+	<button class="btn btn-radius btn--medium" disabled="disabled">Radius</button>
+	<h3>4.2. Colors and Sizes Radius Button</h3>
+	<button class="btn btn-radius btn--small  btn--red">Radius</button>
+	<button class="btn btn-radius btn--medium btn--green">Radius</button>
+	<button class="btn btn-radius btn--large  btn--blue">Radius</button>
+	<button class="btn btn-radius btn--jumbo  btn--purple">Radius</button>
+	<h3>5. Circle Buttons</h3>
+	<code>class="btn btn-circle"</code>
+	<button class="btn btn-circle btn--medium">Circle</button>
+	<h3>5.1 Disabled Circle Buttons</h3>
+	<button class="btn btn-circle btn--medium" disabled="disabled">Circle</button>
+	<h3>5.2 Colors and Sizes Circle Buttons</h3>
+	<button class="btn btn-circle btn--small  btn--red">Circle</button>
+	<button class="btn btn-circle btn--medium  btn--green">Circle</button>
+	<button class="btn btn-circle btn--large  btn--blue">Circle</button>
+	<button class="btn btn-circle btn--jumbo  btn--purple">Circle</button>
+</body>
+</html>
