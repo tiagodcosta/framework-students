@@ -78,6 +78,12 @@ button[disabled=disabled], button:disabled, btn--disabled {
  	background-color: $color-green;
  	color: $color-white;
 
+ 	&:hover {
+ 		color: $color-green;
+ 		border-color: $color-green;
+ 		background-color: transparent;
+ 	}
+
 	&:enabled:hover {
  		color: $color-green;
  		border-color: $color-green;
