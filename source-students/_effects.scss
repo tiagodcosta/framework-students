@@ -1,6 +1,7 @@
-.rollover {
+.rollover-img {
 		position: relative;
 		cursor: pointer;
+		overflow: hidden;
 
 	&-overlay {
 		position: absolute;
@@ -8,15 +9,108 @@
   		bottom: 0;
   		left: 0;
   		right: 0;
-		opacity: 0;
-		cursor: pointer;
 	}
 
 	&-fadein {
+		opacity: 0;
 		transition: .5s ease;
 	}
 
-	&-overlay:hover {
+	&-fadein:hover {
 		opacity: 1;
+	}
+
+	&-slide {
+		overflow: hidden;
+		left: 0;
+  		transition: .5s ease-in-out;
+	}
+	
+	&-slide:hover {
+		left: -100%;
+	}
+}
+
+.rollover {
+
+	&-blur {
+		-webkit-filter: blur(3px);
+		filter: blur(3px);
+		-webkit-transition: .3s ease-in-out;
+		transition: .3s ease-in-out;
+	}
+	
+	&-blur:hover {
+		-webkit-filter: blur(0);
+		filter: blur(0);
+	}
+
+	&-fadein {
+		opacity: 0.5;
+    	-webkit-transition: opacity 1s ease-in-out;
+    	transition: opacity 1s ease-in-out;
+	}
+
+ 	&-fadein:hover {
+    	opacity: 1.0;
+    	-webkit-transition: opacity .55s ease-in-out;
+    	transition: opacity .55s ease-in-out;
+	}
+
+	&-fadeout {
+		opacity: 1.0;
+    	-webkit-transition: opacity .55s ease-in-out;
+    	transition: opacity .55s ease-in-out;
+	}
+
+	&-fadeout:hover {
+		opacity: 0.5;
+    	-webkit-transition: opacity 1s ease-in-out;
+    	transition: opacity 1s ease-in-out;
+	}
+
+	&-gray {
+		-webkit-filter: grayscale(100%);
+		filter: grayscale(100%);
+		-webkit-transition: .3s ease-in-out;
+		transition: .3s ease-in-out;
+	}
+	&-gray:hover {
+		-webkit-filter: grayscale(0);
+		filter: grayscale(0);
+	}
+
+	&-rotate {
+		-webkit-transform: rotate(0) scale(1);
+		transform: rotate(0) scale(1);
+		-webkit-transition: .3s ease-in-out;
+		transition: .3s ease-in-out;
+	}
+	&-rotate:hover {
+		-webkit-transform: rotate(360deg) scale(1.4);
+		transform: rotate(360deg) scale(1.4);
+	}
+
+	&-sepia {
+		-webkit-filter: sepia(100%);
+		filter: sepia(100%);
+		-webkit-transition: .3s ease-in-out;
+		transition: .3s ease-in-out;
+	}
+	&-sepia:hover {
+		-webkit-filter: sepia(0);
+		filter: sepia(0);
+	}
+
+	&-scale {
+		-webkit-transform: scale(1);
+		transform: scale(1);
+		-webkit-transition: .3s ease-in-out;
+		transition: .3s ease-in-out;
+	}
+
+	&-scale:hover {
+		-webkit-transform: scale(1.3);
+		transform: scale(1.3);
 	}
 }
