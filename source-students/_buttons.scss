@@ -49,25 +49,34 @@ button[disabled=disabled], button:disabled, btn--disabled {
 
  
 /***** SIZES *****/
+
+
+.btn {
+	
+	&-small {
+    	font-size: 0.8rem;
+ 		padding: 0.250em 0.438em;
+	}
  
-.btn-small {
-    font-size: 0.8rem;
- 	padding: 0.250em 0.438em;
+	&-medium {
+ 		font-size: 1.1rem;
+ 		padding: 0.375em 0.750em;
+	}
+ 
+	&-large {
+ 		font-size: 1.4rem;
+ 		padding: 0.615em 1.063em;
+	}
+	
+	&-jumbo {
+		font-size: 1.7rem;
+		padding: 0.938em 1.37em;
+	}
+
+
 }
  
-.btn-medium {
- 	font-size: 1.1rem;
- 	padding: 0.375em 0.750em;
-}
- 
-.btn-large {
- 	font-size: 1.4rem;
- 	padding: 0.615em 1.063em;
-}
-.btn-jumbo {
-	font-size: 1.7rem;
-	padding: 0.938em 1.37em;
-}
+
 
 
  
@@ -95,16 +104,17 @@ button[disabled=disabled], button:disabled, btn--disabled {
 .btn-blue {
  	background-color: $color-blue;
  	color: $color-white;
-}
-.btn-blue:hover {
- 	color: $color-blue;
- 	border-color: $color-blue;
- 	background-color: transparent;
- }
 
-.btn-blue:enabled:hover {
- 	color: $color-blue;
- 	border-color: $color-blue;
+	&:hover {
+ 		color: $color-blue;
+ 		border-color: $color-blue;
+ 		background-color: transparent;
+	}
+
+	&:enabled:hover {
+ 		color: $color-blue;
+ 		border-color: $color-blue;
+ 	}
  }
  
  
@@ -112,81 +122,85 @@ button[disabled=disabled], button:disabled, btn--disabled {
  .btn-red {
  	background-color: $color-red;
  	color: $color-white;
- }
- .btn-red:hover {
- 	color:$color-red;
- 	border-color: $color-red;
- 	background-color: transparent;
- }
-
- .btn-red:enabled:hover {
- 	color:$color-red;
- 	border-color: $color-red;
- }
  
+ 	&:hover {
+ 		color:$color-red;
+ 		border-color: $color-red;
+ 		background-color: transparent;
+ 	}
+
+ 	&:enabled:hover {
+ 		color:$color-red;
+ 		border-color: $color-red;
+ 	}
+ }
 
  /* Black */
 .btn-black {
 	background-color: $color-black;
 	color: $color-white;
-}
-.btn-black:hover {
-	color: $color-black;
-	border-color: $color-black;
-	background-color: transparent;
-}
-.btn-black:enabled:hover {
-	color: $color-black;
-	border-color: $color-black;
-}
 
+	&:hover {
+		color: $color-black;
+		border-color: $color-black;
+		background-color: transparent;
+	}
+	&:enabled:hover {
+		color: $color-black;
+		border-color: $color-black;
+	}
+}
 
 /* Orange */
 .btn-orange {
 	background-color: $color-orange;
 	color: $color-white;
-}
-.btn-orange:hover {
-	color: $color-orange;
-	border-color: $color-orange;
-	background-color: transparent;
-}
-.btn-orange:enabled:hover {
-	color: $color-orange;
-	border-color: $color-orange;
-}
+
+	&:hover {
+		color: $color-orange;
+		border-color: $color-orange;
+		background-color: transparent;
+	}
+
+	&:enabled:hover {
+		color: $color-orange;
+		border-color: $color-orange;
+	}
+}	
 
 
 /* Brown */
 .btn-brown {
 	background-color: $color-brown;
 	color: $color-white;
-}
-.btn-brown:hover {
-	color: $color-brown;
-	border-color: $color-brown;
-	background-color: transparent;
-}
-.btn-brown:enabled:hover {
-	color: $color-brown;
-	border-color: $color-brown;
-}
 
+	&:hover {
+		color: $color-brown;
+		border-color: $color-brown;
+		background-color: transparent;
+	}
+	
+	&:enabled:hover {
+		color: $color-brown;
+		border-color: $color-brown;
+	}
+}
 /* Purple */
 .btn-purple {
 	background-color: $color-purple;
 	color: $color-white;
-}
-.btn-purple:hover {
-	color: $color-purple;
-	border-color: $color-purple;
-	background-color: transparent;
-}
-.btn-purple:enabled:hover {
-	color: $color-purple;
-	border-color: $color-purple;
-}
- 
+
+	&:hover {
+		color: $color-purple;
+		border-color: $color-purple;
+		background-color: transparent;
+	}
+	
+	&:enabled:hover {
+		color: $color-purple;
+		border-color: $color-purple;
+	}
+} 
 
  
 /* Submit Button */

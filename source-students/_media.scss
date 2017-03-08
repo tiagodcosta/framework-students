@@ -32,10 +32,10 @@
 
 	// borders
 	&-normal-border {
-		border: 0.31em solid #000;
+		border: 0.31em solid $color-black;
 	}
 	&-double-border {
-		border: 0.31em double #000;
+		border: 0.31em double $color-black;
 	}
 
 	// filter
