@@ -48,3 +48,24 @@
 	margin: 0;
 	padding: 0;
 }
+
+
+.node-letter {
+	position: relative;
+	box-shadow: 0 8px 10px -6px #000;
+	background: linear-gradient(-150deg, transparent 1.5em, #fff 0);
+	border-radius: .5em;
+	border: 0 none;
+}
+
+.node-letter:before {
+	content: '';
+	position: absolute;
+	top: 0; right: 0;
+	width: 1.73em; height: 3em;
+	background: linear-gradient(to left bottom, transparent 50%, rgba(0,0,0,.2) 0, rgba(0,0,0,.4)) 100% 0 no-repeat;
+	transform: translateY(-1.3em) rotate(-30deg);
+	transform-origin: bottom right;
+	border-bottom-left-radius: .5em;
+	box-shadow: -.2em .2em .3em -.1em rgba(0,0,0,.15)
+}
