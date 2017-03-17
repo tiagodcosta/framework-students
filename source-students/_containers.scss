@@ -56,16 +56,24 @@
 	background: linear-gradient(-150deg, transparent 1.5em, $color-white-cloud 0);
 	border-radius: .5em; 
 	border: 0 none;
+
+	&:before {
+		content: '';
+		position: absolute;
+		top: 0; right: 0;
+		width: 1.73em; height: 3em;
+		background: linear-gradient(to left bottom, transparent 50%, rgba(0,0,0,.2) 0, rgba(0,0,0,.4)) 100% 0 no-repeat;
+		transform: translateY(-1.3em) rotate(-30deg);
+		transform-origin: bottom right;
+		border-bottom-left-radius: .5em;
+		box-shadow: -.2em .2em .3em -.1em rgba(0,0,0,.15);
+	}
 }
 
-.node-letter:before {
-	content: '';
-	position: absolute;
-	top: 0; right: 0;
-	width: 1.73em; height: 3em;
-	background: linear-gradient(to left bottom, transparent 50%, rgba(0,0,0,.2) 0, rgba(0,0,0,.4)) 100% 0 no-repeat;
-	transform: translateY(-1.3em) rotate(-30deg);
-	transform-origin: bottom right;
-	border-bottom-left-radius: .5em;
-	box-shadow: -.2em .2em .3em -.1em rgba(0,0,0,.15);
-}
+.node-cutcorners {
+	border: 0 none;
+	background-color: $color-blue;
+	clip-path: polygon(20px 0, calc(100% - 20px) 0, 100% 20px, 100% calc(100% - 20px), calc(100% - 20px) 100%, 20px 100%, 0 calc(100% - 20px), 0 20px);
+}	
+
+
