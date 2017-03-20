@@ -98,11 +98,11 @@
 }
 
 .node-slide {
-	animation: slide .8s ease-in;
+	animation: slide .8s ease-out;
 }
 
 @keyframes slide {
-  from { transform: translate3d(-100%, 0, 0); }
-  to { transform: translate3d(0, 0, 0); }
+  from { transform: translateX(-100%); }
+  to { transform: translateX(0); }
 }
 
