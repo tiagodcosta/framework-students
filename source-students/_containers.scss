@@ -4,10 +4,10 @@
 	width: 85%;
 	height: auto;
 	background-color: transparent;
-	color: #000;
+	color: $color-black;
 	padding: 1em;
 	margin: 2em auto;
-	border: 0.06em solid #d5d5d5;
+	border: 0.06em solid $color-default;
 	overflow: hidden;
 
 	//position 
@@ -16,26 +16,27 @@
 	}
 	//colors
 	&-blue {
-		background-color: #3498db;
-		border: 0.06em solid #3498db;
+		background-color: $color-blue;
+		border: 0.06em solid $color-blue;
 	}
 	&-grey {
-		background-color: #d5d5d5;
+		background-color: $color-default;
 	}
 	&-pink {
-		background-color: #ffc0cb;
-		border: 0.06em solid #ffc0cb;
+		background-color: $color-pink;
+		border: 0.06em solid $color-pink;
 	}
 	&-green {
-		background-color: #9be8bc;
-		border: 0.06em solid #9be8bc;
+		background-color:  $color-green;
+		border: 0.06em solid $color-green;
 	}
 	&-yellow {
-		background-color: #f1c40f;
-		border: 0.06em solid #f1c40f;
+		background-color: $color-yellow;
+		border: 0.06em solid $color-yellow;
 	}	
 }
 
+//Fullscreen image
 .background-node-img {
 	position: absolute;
 	z-index: -1;
@@ -49,7 +50,7 @@
 	padding: 0;
 }
 
-
+//Emulate a letter frame
 .node-letter {
 	position: relative;
 	box-shadow: 0 8px 10px -6px $color-black;
@@ -70,10 +71,29 @@
 	}
 }
 
+//Cut the corners of the node
 .node-cutcorners {
 	border: 0 none;
 	background-color: $color-blue;
 	clip-path: polygon(20px 0, calc(100% - 20px) 0, 100% 20px, 100% calc(100% - 20px), calc(100% - 20px) 100%, 20px 100%, 0 calc(100% - 20px), 0 20px);
 }	
 
+//Transition effects between nodes
+.node-fadein {
+	animation: node-fadein .8s ease-out; 
+}
+
+@keyframes node-fadein {
+	from {opacity: 0;}
+	to {opacity: 1; }
+}
+
+.node-fadeout {
+	animation: node-fadeout .8s ease-out; 
+}
+
+@keyframes node-fadeout {
+	from {opacity: 1;}
+	to {opacity: 0; }
+}
 
