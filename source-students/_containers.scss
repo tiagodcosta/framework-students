@@ -40,7 +40,7 @@
 .background-node-img {
 	position: absolute;
 	z-index: -1;
-	with: 100%;
+	width: 100%;
 	height: auto;
 	min-width: 100%;
 	min-height: 100%;
@@ -115,4 +115,13 @@
 	20% {transform: rotate(80deg);}
 	80% {opacity: 1;}
 	100% {opacity: 1; transform: rotate(0); }
+}
+
+.node-scale {
+	animation: scale .8s ease-in;
+}
+
+@keyframes scale {
+	from { transform: scale(0);}
+	to { transform: scale(1);}
 }
