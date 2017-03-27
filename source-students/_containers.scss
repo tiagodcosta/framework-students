@@ -113,7 +113,7 @@
 @keyframes hinge {
 	0% {opacity: 0; transform: rotate(60deg); transform-origin: bottom right; }
 	20% {transform: rotate(80deg);}
-	80% {opacity: 1;}
+	80% {opacity: 1; }
 	100% {opacity: 1; transform: rotate(0); }
 }
 
