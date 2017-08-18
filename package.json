@@ -1,7 +1,7 @@
 {
-  "name": "library-styles-css-inkdlab",
+  "name": "framework-students",
   "version": "1.0.0",
-  "description": "Shared styles used in the lab",
+  "description": "styles for students",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -26,6 +26,6 @@
     "browser-sync": "^2.18.6",
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^3.1.1",
-    "gulp-sass": "^3.1.0",
+    "gulp-sass": "^3.1.0"
   }
 }
