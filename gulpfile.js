@@ -14,7 +14,7 @@ gulp.task('browser-sync', function(){
 });
 
 gulp.task('sass', function(){
-	return gulp.src('./src/scss/main.scss')
+	return gulp.src('./src/scss/index.scss')
 		.pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
 		.pipe(autoprefixer())
 		.pipe(gulp.dest('./dist/css'));
