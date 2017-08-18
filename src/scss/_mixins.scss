@@ -1,0 +1,44 @@
+//----- General Mixins ------//
+
+//Centralize elements in the screen using flexbox
+@mixin centralize {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  //Add smooth transition to buttons
+  @mixin transition-light($what: all, $time: 0.3s, $how: ease-in-out) {
+      -webkit-transition: $what $time $how;
+      -moz-transition:    $what $time $how;
+      -ms-transition:     $what $time $how;
+      -o-transition:      $what $time $how;
+      transition:         $what $time $how;
+  }
+  //Add truncate for texts
+  @mixin truncate {
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+  }
+  
+  @mixin gradient($from, $to) {
+    background-color: $from;
+    background: linear-gradient($from, $to);
+  }
+  
+  //------Media Queries Mixins ---//
+  @mixin breakpoint-tablet {
+      @media only screen and (max-width: #{$tablet-width}) {
+        @content
+      }
+  }
+  @mixin breakpoint-phone {
+     @media only screen and (max-width: #{$phone-width}) {
+       @content
+     }
+  }
+  @mixin breakpoint-desktop {
+    @media only screen and (min-width: #{$desktop-width}) {
+      @content
+    }
+  }
