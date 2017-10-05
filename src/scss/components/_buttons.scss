@@ -73,8 +73,9 @@ button[disabled=disabled], button:disabled, btn--disabled {
  
 /* Green */
 .btn-green {
- 	background-color: $color-green;
- 	color: $color-white;
+	background-color: $color-green;
+	border: 0.06em solid $color-white;
+	color: $color-white;
 
  	&:hover {
  		color: $color-green;
@@ -91,8 +92,9 @@ button[disabled=disabled], button:disabled, btn--disabled {
 
 /* Blue */
 .btn-blue {
- 	background-color: $color-blue;
- 	color: $color-white;
+	background-color: $color-blue;
+	border: 0.06em solid $color-white;
+	color: $color-white;
 
 	&:hover {
  		color: $color-blue;
@@ -109,8 +111,9 @@ button[disabled=disabled], button:disabled, btn--disabled {
  
  /* red */
  .btn-red {
- 	background-color: $color-red;
- 	color: $color-white;
+	background-color: $color-red;
+	border: 0.06em solid $color-white;
+	color: $color-white;
  
  	&:hover {
  		color:$color-red;
@@ -127,6 +130,7 @@ button[disabled=disabled], button:disabled, btn--disabled {
  /* Black */
 .btn-black {
 	background-color: $color-black;
+	border: 0.06em solid $color-white;
 	color: $color-white;
 
 	&:hover {
@@ -143,6 +147,7 @@ button[disabled=disabled], button:disabled, btn--disabled {
 /* Orange */
 .btn-orange {
 	background-color: $color-orange;
+	border: 0.06em solid $color-white;
 	color: $color-white;
 
 	&:hover {
@@ -161,6 +166,7 @@ button[disabled=disabled], button:disabled, btn--disabled {
 /* Brown */
 .btn-brown {
 	background-color: $color-brown;
+	border: 0.06em solid $color-white;
 	color: $color-white;
 
 	&:hover {
@@ -177,6 +183,7 @@ button[disabled=disabled], button:disabled, btn--disabled {
 /* Purple */
 .btn-purple {
 	background-color: $color-purple;
+	border: 0.06em solid $color-white;
 	color: $color-white;
 
 	&:hover {

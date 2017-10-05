@@ -1,0 +1,8 @@
+//Function that set colors with or not variants. It should be used with SASS maps
+@function setcolor($color-name, $color-variant:null) {
+    @if ($color-variant != null) {
+      @return map-get(map-get($colors, $color-name), $color-variant);
+    } @else {
+      @return map-get($colors, $color-name);
+    }
+}
